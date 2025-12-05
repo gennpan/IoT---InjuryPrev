@@ -1,0 +1,40 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IoT Dashboard</title>
+    <link rel="stylesheet" href="../static/style.css" />
+</head>
+<body>
+<header>
+    <div class="hamburger" onclick="toggleSidebar()">☰</div>
+    <h2>InjuryPrev - Statistiche</h2>
+</header>
+
+<nav id="sidebar" class="hidden">
+    <ul>
+        <li><a href="home.html">Dashboard</a></li>
+        <li><a href="statistics.html">Statistiche</a></li>
+    </ul>
+</nav>
+
+<main id="main">
+    <div class="card">
+        <h3>Statistiche</h3>
+        <p>Visualizza stats.</p>
+    </div>
+</main>
+
+
+
+
+<script>
+    const sidebar = document.getElementById('sidebar');
+    const main = document.getElementById('main');
+    function toggleSidebar() {
+        sidebar.classList.toggle('hidden');
+        main.classList.toggle('full');
+    }
+</script>
+</body>
+</html>
